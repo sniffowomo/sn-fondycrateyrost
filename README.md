@@ -9,6 +9,7 @@
 ----
 1. [$What \\ This ?$](#what--this-)
 2. [$Repoza$](#repoza)
+3. [Dirs](#dirs)
 
 ----
 
@@ -17,3 +18,10 @@
 1. Testings dings or fondy and rostey makyings 
 
 # $Repoza$
+
+1. Work stuff here see dirs 
+
+# Dirs 
+
+♐ | 📥
+|:--:|:--:|
