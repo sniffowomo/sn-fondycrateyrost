@@ -1,24 +1,25 @@
+#!/bin/fish
 function bal 
 
     # This function is for getting the balances of all of your accounts 
     # Wallets set 
-    # w1 0xA00AB3fb59F337601b2D9f6b3e67C88AB2D84ABe
-    # w2 0xAC767126aCe1d918Db578679B8a9a8E0A41EE112
-    # w3 0xe3961e84bF293018E930Ee96DF7996812c019eC5
-    # w4 0xD1d36E9342215f1aF090FD1F6bA46D1FB4C34cc0
+    # w1 0x3df7eFFc80416b96d5953577d023A1F56AB7c45a
+    # w2 0xc70258D26ee511F4086b66d8B9A84DB0C79A1042
+    # w3 0xe293c8344c04c8A46BC28D08D3fEA6Fa6827C2A4
+    # w4 0x93F8496bbCa6C869DA7c905eFb5Dc87b38617B37
 
     # Set Variables - Just Jeep changin this all the
     # Wallets 
-    set A1 0xA00AB3fb59F337601b2D9f6b3e67C88AB2D84ABe
-    set A2 0xAC767126aCe1d918Db578679B8a9a8E0A41EE112
-    set A3 0xe3961e84bF293018E930Ee96DF7996812c019eC5
-    set A4 0xD1d36E9342215f1aF090FD1F6bA46D1FB4C34cc0
+    set A1 0x3df7eFFc80416b96d5953577d023A1F56AB7c45a
+    set A2 0xc70258D26ee511F4086b66d8B9A84DB0C79A1042
+    set A3 0xe293c8344c04c8A46BC28D08D3fEA6Fa6827C2A4
+    set A4 0x93F8496bbCa6C869DA7c905eFb5Dc87b38617B37
 
     # Set RPC here 
-    set GOE https://eth-goerli.g.alchemy.com/v2/wfowE284fYsqh-laeF5qmjOTQ3YTwuX_  
-    set MUM https://polygon-mumbai.g.alchemy.com/v2/DlxcFxU5u-OioYGMvKhwWsAzAknhvQYd
-    set SEP https://sepolia.infura.io/v3/4d9f7fa54ce44d1aa3319dca50aa3dd7
-    set BSC https://sparkling-boldest-brook.bsc-testnet.discover.quiknode.pro/9c0a1ccf523e238a5e6d574a36ea192f5fcfb747
+    set GOE https://eth-goerli.g.alchemy.com/v2/J7mSlfOMfkB8Gi0l0Lyg3WV2N3tzBMg8
+    set MUM https://polygon-mumbai.g.alchemy.com/v2/i9eChJfOCWZI7-RnrNGsMkEC6Xx9wix5
+    set SEP https://sepolia.infura.io/v3/cd03f6b1d3ad4c65ae3ee0cc42640cf7
+    set BSC https://burned-dark-wave.bsc-testnet.discover.quiknode.pro/ba74335e452f9a1616f90976d70a65a482bd1736/
 
     # Actual Code starts here 
 
@@ -37,8 +38,8 @@ function bal
     echo ""
     echo (set_color 0000ff)"***********************************************************************"
     echo (set_color 0000ff)""
-    echo (set_color 0000ff)"WRL1  : 0xA00AB3fb59F337601b2D9f6b3e67C88AB2D84ABe "
-    echo (set_color 0000ff)"WRL1K : 0xaeab6783e24ee5f27fc75d7cd43ac6a5c9c254ec7a51827430fb6ea6b1c6694e"
+    echo (set_color 0000ff)"W1 0x3df7eFFc80416b96d5953577d023A1F56AB7c45a"
+    echo (set_color 0000ff)"W1K 0xcaec54dbcd1480aacc90b314ba96f3672010406be11963f0464fd15c0946ca37"
     echo (set_color 0000ff)""
     echo (set_color 0000ff)"***********************************************************************"
     set w1g (cast balance $A1 --rpc-url $GOE ) 
@@ -54,8 +55,8 @@ function bal
     echo " "
     echo (set_color ee82ee)"***********************************************************************"
     echo (set_color ee82ee)""
-    echo (set_color ee82ee)"WRL2  : 0xAC767126aCe1d918Db578679B8a9a8E0A41EE112"
-    echo (set_color ee82ee)"WRL2K : 0x8efb214d6f66694e16f9988571357c95940a649f835e988e53c0204ac90653de"
+    echo (set_color ee82ee)"W2  : 0xc70258D26ee511F4086b66d8B9A84DB0C79A1042"
+    echo (set_color ee82ee)"W2K : 0xd053853cc83ebb67a1561303aeedd02ea2b4a1c3fbf076f27ee03b7cc0187a48"
     echo (set_color ee82ee)""
     echo (set_color ee82ee)"***********************************************************************"
     set w1g (cast balance $A2 --rpc-url $GOE )
@@ -71,8 +72,8 @@ function bal
     echo ""
     echo (set_color 3cb371)"***********************************************************************"
     echo (set_color 3cb371)""
-    echo (set_color 3cb371)"WRL3  : 0xe3961e84bF293018E930Ee96DF7996812c019eC5"
-    echo (set_color 3cb371)"WRL3K : 0xb9b9b4db9f1bafc1653e5794a929ec86b7a0528e5c70e4749b4d03a4a5b3af03"
+    echo (set_color 3cb371)"W3  : 0xe293c8344c04c8A46BC28D08D3fEA6Fa6827C2A4"
+    echo (set_color 3cb371)"W3K : 0xf94c3586a050767f1146c3d479b96c210a891892f396fd8458013dbd631c5c1f"
     echo (set_color 3cb371)""
     echo (set_color 3cb371)"***********************************************************************"
     set w1g (cast balance $A3 --rpc-url $GOE)
@@ -88,8 +89,8 @@ function bal
     echo " "
     echo (set_color ffa500)"***********************************************************************"
     echo (set_color ffa500)""
-    echo (set_color ffa500)"WRL4  : 0xD1d36E9342215f1aF090FD1F6bA46D1FB4C34cc0"
-    echo (set_color ffa500)"WRL4K : 0xb2fec2d29c2dc5e57452ba9e91792d908e89e77c1d9ba32324c5becc8763c41d"
+    echo (set_color ffa500)"WR4  : 0x93F8496bbCa6C869DA7c905eFb5Dc87b38617B37"
+    echo (set_color ffa500)"WR4K : 0xc9f3fe1d04b60cd8f79a5395fbe310cdc900c6f788ee0ebcb03f5c2ff4344414"
     echo (set_color ffa500)""
     echo (set_color ffa500)"***********************************************************************"
     set w1g (cast balance $A4 --rpc-url $GOE)
