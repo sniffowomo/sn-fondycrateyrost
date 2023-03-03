@@ -1,6 +1,6 @@
 
-<img src="./sn/21.webp" width="250" align="right">
-<img src="./sn/21.webp" width="250" align="left">
+<img src="./sn/21.webp" width="100" align="right">
+<img src="./sn/21.webp" width="100" align="left">
 
 ----
 <h1 align="center"><code> 🍰:sn-fondycraterosty </code></h1>
